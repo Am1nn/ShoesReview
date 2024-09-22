@@ -1,0 +1,142 @@
+.product_list {
+    margin: 100px 0;
+    padding: 0;
+    list-style-type: none;
+
+    color: black;
+}
+
+.product_listCard {
+    margin-bottom: 100px;
+
+    padding: 30px 50px;
+
+    background-color: #fff;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+    transition: 200ms;
+}
+
+.product_listHeaderContainer {
+    
+    display: grid;
+    grid-template-columns: 93% 5%;
+    gap: 0 20px;
+
+    align-items: center;
+}
+
+.product_listHeaderContainer div {
+    height: 8px;
+
+    border-radius: 1px;
+
+    background-color: #115dd8;
+}
+
+.product_listHeader {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    text-align: right;
+}
+
+.product_dataContainer {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: 55% 40%;
+
+    gap: 0 50px;
+}
+
+.product_dataContainer img {
+    width: 80%;
+
+    margin-top: 50px;
+}
+
+.product_listName {
+    margin: 0;
+
+    color: #7537e6;
+    font-size: 70px;
+}
+
+.product_listContent {
+    margin-top: 50px;
+
+    color: #555;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.custom_hr {
+    margin: 50px 0 30px 200px;
+
+    height: 3px;
+    background: linear-gradient(to right, #115dd8 0%, #115dd8 20%, #ddd 20%, #ddd 100%);
+}
+
+.product_listBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product_listBtn {
+    padding: 14px 30px;
+
+    color: #fff;
+    font-size: 16px;
+    
+    border: 1px solid #115dd8;
+    border-radius: 200px;
+    
+    background-color: #115dd8;
+    
+    transition: 200ms;
+    
+    text-decoration: none;
+}
+
+.product_listBtn:hover {
+    color: #115dd8;
+    background-color: #fff;
+}
+
+@media (max-width: 700px) {
+    
+    .product_dataContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .custom_hr {
+        margin-left: 0;
+        background: linear-gradient(to right, #115dd8 0%, #115dd8 40%, #ddd 20%, #ddd 100%);
+    }
+}
+
+@media (max-width: 425px) {
+
+    .product_listHeaderContainer {
+        grid-template-columns: 85% 5%;
+    }
+
+    .product_listCard {
+        padding: 30px;
+    }
+
+    .product_listName {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .product_listName {
+        font-size: 30px;
+    }
+
+}
